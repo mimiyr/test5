@@ -1,0 +1,11 @@
+import json
+
+data = {
+"name": "my-vercel-app",
+"builds": [
+{ "src": "index.py", "use": "@now/python" }
+]
+}
+
+with open('vercel.json', 'w') as file:
+json.dump(data, file, indent=2)
